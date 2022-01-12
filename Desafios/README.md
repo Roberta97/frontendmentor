@@ -1,7 +1,9 @@
 # frontendmentor
 
-*Profile card: finalizado
 
-*BaseApparel: em progresso
 
-*Order Summary: Não iniciado
+Desafios  | Progresso
+--------- | ------
+Profile card | Finalizado
+BaseApparel | Em progresso
+Order Summary | não iniciado
