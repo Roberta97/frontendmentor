@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body::before, body::after{
+    content: '';
+    display: block;
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+
+}
+body::before{
+    background-image: url(/assets/images/bg-pattern-bottom.svg);
+    top: 50%;
+    left: 50%;
+}
+body::after{
+    background-image: url(/assets/images/bg-pattern-top.svg);
+    bottom: 50%;
+    right: 50%;
+    background-position: bottom right;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.container_area{
+    width:400px;
+    height:400px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 0px 0px 35px hsl(227deg 10% 46%);
+    
+}
+.container_area .area_top{
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    display:flex;
+    justify-content: center;
+    background-image: url(/assets/images/bg-pattern-card.svg);
+}
+.circle_photo{
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    border: solid white 5px;
+    /* background-image: url(/assets/images/image-victor.jpg);*/
+    position:relative;
+    top:80px; 
+    overflow: hidden;
+}
+.circle_photo img{
+    width:100%;
+}
+
+.container_area .area_bottom{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:70%;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.area_bottom .area_name, 
+.local{
+    margin-top: 60px;
+    font-size:18px;
+    text-align: center;
+}
+.area_name, .personal_data_quant{
+    font-weight:700;
+}
+
+.area_name span{
+    flex-direction: row;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.area_bottom .local{
+    margin-top:20px;
+    font-size:20px;
+    color: hsl(0, 0%, 59%)
+}
+.area_bottom .personal_data{
+    display:flex;
+    justify-content: center;
+    margin-top:60px;
+    border-top: solid #ccc 1px;
+    
+}
+.personal_data_info {
+    padding: 20px 20px;
+    text-align:center;
+}
+.personal_data_info .personal_data_desc{
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+    margin-top: 10px;
+    
+}
+@media screen and (max-width: 425px) {
+    .container_area{
+        width:300px;
+        
+    }
+    body::before{
+        width:100%;
+        top: 70%;
+        left: 50%;
+        
+    }
+     body::after{
+        width: 100%;
+        bottom: 70%;
+        right: 50%;
+     }
+    
+}
