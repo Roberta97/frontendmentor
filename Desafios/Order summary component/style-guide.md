@@ -14,6 +14,11 @@ The designs were created to the following widths:
 - Pale blue: hsl(225, 100%, 94%)
 - Bright blue: hsl(245, 75%, 52%)
 
+<style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> 
+  
 ### Neutral
 
 - Very pale blue: hsl(225, 100%, 98%)
