@@ -6,4 +6,4 @@ Desafios  | Progresso
 :--------- | :------
 Profile card | Finalizado
 BaseApparel | Em progresso
-Order Summary | não iniciado
+Order Summary | pendente ajustar mobile
